@@ -19,7 +19,7 @@ jobs:
     - name: Publish to Registry
       uses: docker/build-push-action@v1
       with:
-        repository: jakousa/dwk-4-gitops-app
+        repository: laurihak/dwk-project
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: ${{ github.sha }}
