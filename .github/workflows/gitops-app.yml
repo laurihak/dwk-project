@@ -5,7 +5,10 @@ on:
     branches:
       - master
     paths:
-      - '4-gitops/app/**'
+      - '4-gitops/app/dwk-back/**'
+      - '4-gitops/app/dwk-front/**'
+      - '4-gitops/app/dwk-broadcaster/**'
+      - '4-gitops/app/dwk-postgres/**'
       - '.github/workflows/gitops-app.yml'
 
 jobs:
