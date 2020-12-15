@@ -1,14 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- vanilla-manifests/deployment.yaml
-- vanilla-manifests/configamp.yaml
-- vanilla-manifests/ingress.yaml
-- vanilla-manifests/namespace.yaml
-- vanilla-manifests/secret.yaml
-- vanilla-manifests/service.yaml
-- vanilla-manifests/statefulset.yaml
-- vanilla-manifests/initdbconfig.yaml
+- deployment.yaml
+- configamp.yaml
+- ingress.yaml
+- namespace.yaml
+- secret.yaml
+- service.yaml
+- statefulset.yaml
+- initdbconfig.yaml
 images:
 - name: IMAGE_BACKEND_PLACEHOLDER
   newName: laurihakala/dwk-project-backend
