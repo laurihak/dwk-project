@@ -18,10 +18,10 @@ spec:
   template:
     metadata:
       labels:
-        app: project
+        app: project-backend
     spec:
       containers:
-        - name: project
+        - name: project-backend
           image: IMAGE_PLACEHOLDER
           envFrom:
             - configMapRef:

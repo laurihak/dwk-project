@@ -53,7 +53,7 @@ const Todo = () => {
       }
     } catch (e) {
       console.log(e);
-      throw new Error("Database connection error");
+      throw new Error("Database connection error" + e);
     }
   };
 
@@ -143,8 +143,8 @@ const DeleteIcon = ({ item, fetchList }) => {
         data: item,
       });
       if (response) {
-        console.log('this is the response ', response)
-        console.log('fetching lists')
+        console.log("this is the response ", response);
+        console.log("fetching lists");
         fetchList();
       }
     } catch (e) {
