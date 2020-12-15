@@ -73,8 +73,8 @@ jobs:
     - name: Update yamls
       working-directory: 4-gitops/vanilla-manifests/
       run: |-
-        ./kustomize edit set image IMAGE_FRONTEND_PLACEHOLDER=laurihakala/dwk-project-frontend:${{ github.sha }}
-        ./kustomize edit set image IMAGE_BACKEND_PLACEHOLDER=laurihakala/dwk-project-backend:${{ github.sha }}
+        ./kustomize edit set image IMAGE_FRONTEND_PLACEHOLDER=laurihakala/dwk-project-frontend:${{ github.sha }} &&
+        ./kustomize edit set image IMAGE_BACKEND_PLACEHOLDER=laurihakala/dwk-project-backend:${{ github.sha }} &&
         ./kustomize edit set image IMAGE_BROADCASTER_PLACEHOLDER=laurihakala/dwk-project-broadcaster:${{ github.sha }}
 
     # Commit and push
