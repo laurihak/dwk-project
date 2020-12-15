@@ -47,9 +47,7 @@ const Todo = () => {
   const fetchList = async () => {
     try {
       const response = await axios.get(`${API_URL}/todos`);
-      console.log("testing response: ", response);
       const data = response.data;
-      console.log("this is the data from fetch ", data);
       if (data) {
         setList(data);
       }
