@@ -11,11 +11,11 @@ resources:
 - vanilla-manifests/initdbconfig.yaml
 images:
 - name: IMAGE_FRONTEND_PLACEHOLDER
-  newName: laurihakala/project-frontend
+  newName: laurihakala/dwk-project-frontend
   newTag: fdafd7088d04892815ed037cf30ca4f61c7af2f7
 - name: IMAGE_BACKEND_PLACEHOLDER
-  newName: laurihakala/project-backend
+  newName: laurihakala/dwk-project-backend
   newTag: fdafd7088d04892815ed037cf30ca4f61c7af2f7
 - name: IMAGE_BROADCASTER_PLACEHOLDER
-  newName: laurihakala/project-broadcaster
+  newName: laurihakala/dwk-project-broadcaster
   newTag: fdafd7088d04892815ed037cf30ca4f61c7af2f7
