@@ -16,7 +16,7 @@ const styles = {
 const App = () => {
   return (
     <div>
-      <header style={styles.container}>TODO APP WITH GITOPS</header>
+      <header style={styles.container}>TODO APP WITH GITOPS AND FLUX</header>
       <Todo />
     </div>
   );
