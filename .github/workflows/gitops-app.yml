@@ -2,8 +2,8 @@ name: Release 4-gitops-app
 
 on:
   push:
-    branches:
-      - master
+#     branches:
+#       - master
 #     paths:
 #       - '4-gitops/app/dwk-back/**'
 #       - '4-gitops/app/dwk-front/**'
