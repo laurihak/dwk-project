@@ -29,7 +29,7 @@ jobs:
     - name: Publish to Registry
       uses: docker/build-push-action@v1
       with:
-        repository: laurihak/dwk-project-backend
+        repository: laurihakala/dwk-project-backend
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: ${{ github.sha }}
@@ -39,7 +39,7 @@ jobs:
     - name: Publish to Registry
       uses: docker/build-push-action@v1
       with:
-        repository: laurihak/dwk-project-frontend
+        repository: laurihakala/dwk-project-frontend
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: ${{ github.sha }}
@@ -49,7 +49,7 @@ jobs:
     - name: Publish to Registry
       uses: docker/build-push-action@v1
       with:
-        repository: laurihak/dwk-project-broadcaster
+        repository: laurihakala/dwk-project-broadcaster
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: ${{ github.sha }}
