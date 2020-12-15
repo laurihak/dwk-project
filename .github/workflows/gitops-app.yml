@@ -43,7 +43,9 @@ jobs:
     - name: Update yamls
       working-directory: 4-gitops/manifests
       run: |-
-        ./kustomize edit set image IMAGE_PLACEHOLDER=laurihakala/dwk-4-gitops-app:${{ github.sha }}
+        ./kustomize edit set image IMAGE_FRONTEND_PLACEHOLDER=laurihakala/project-frontend:${{ github.sha }}
+        ./kustomize edit set image IMAGE_BACKEND_PLACEHOLDER=laurihakala/project-backend:${{ github.sha }}
+        ./kustomize edit set image IMAGE_BROADCASTER_PLACEHOLDER=laurihakala/project-broadcaster:${{ github.sha }}
 
     # Commit and push
     - uses: EndBug/add-and-commit@v5
