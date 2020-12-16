@@ -12,10 +12,10 @@ resources:
 images:
 - name: IMAGE_BACKEND_PLACEHOLDER
   newName: laurihakala/dwk-project-backend
-  newTag: 979b88aaf85a37bb1aab8a2956fdff9403910ed5
+  newTag: 7c9a494180eda3aba49ddbb636eb90fcc3f18a46
 - name: IMAGE_BROADCASTER_PLACEHOLDER
   newName: laurihakala/dwk-project-broadcaster
-  newTag: 979b88aaf85a37bb1aab8a2956fdff9403910ed5
+  newTag: 7c9a494180eda3aba49ddbb636eb90fcc3f18a46
 - name: IMAGE_FRONTEND_PLACEHOLDER
   newName: laurihakala/dwk-project-frontend
-  newTag: 979b88aaf85a37bb1aab8a2956fdff9403910ed5
+  newTag: 7c9a494180eda3aba49ddbb636eb90fcc3f18a46
