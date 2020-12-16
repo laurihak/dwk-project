@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '4-gitops/app/**'
+      - '4-gitops/app/dwk-front/**'
       - '4-gitops/vanilla-manifests/**'
       - '.github/workflows/gitops-app.yml'
 
