@@ -29,6 +29,7 @@ const chat_id = process.env.CHAT_ID;
 const host = os.hostname();
 
 nc.subscribe("todo_data", { queue: "todo.workers" }, async (msg) => {
+  console.log("subscribed to todo_data: " + msg);
   await sendToTelegram(msg);
 });
 
