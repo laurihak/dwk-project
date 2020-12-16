@@ -44,4 +44,4 @@ spec:
     name: web
   clusterIP: None
   selector:
-    app: project
+    app: postgres
