@@ -8,7 +8,7 @@ nc.on("error", (error) => {
   console.log(error.message);
 });
 nc.on("connect", () => {
-  console.log("Client connected to nats");
+  console.log("Client connected to " + nc.url);
 });
 
 const {
