@@ -1,5 +1,5 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
+kind: HelmRepository
 metadata:
   name: prometheus
   namespace: flux-system
@@ -18,7 +18,7 @@ spec:
     spec:
       chart: prometheus-community
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: prometheus
         namespace: flux-system
       interval: 1m
