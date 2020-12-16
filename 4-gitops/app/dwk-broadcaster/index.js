@@ -19,9 +19,9 @@ const {
 } = require("unique-names-generator");
 
 const appName = uniqueNamesGenerator({
-  dictionaries: [adjectives, animals, colors], // colors can be omitted here as not used
+  dictionaries: [adjectives, animals, colors],
   length: 2,
-}); // big-donkey
+}); 
 
 const { Telegraf } = require("telegraf");
 const bot = new Telegraf(process.env.BOT_TOKEN);
@@ -29,7 +29,7 @@ const chat_id = process.env.CHAT_ID;
 const host = os.hostname();
 
 nc.subscribe("todo_data", { queue: "todo.workers" }, async (msg) => {
-  console.log("subscribed to todo_data: " + msg);
+  console.log("subscribed to todo_data: " + JSON.stringify(msg));
   await sendToTelegram(msg);
 });
 
