@@ -16,7 +16,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: prometheus
+      chart: ./charts/prometheus
       sourceRef:
         kind: GitRepository
         name: prometheus
