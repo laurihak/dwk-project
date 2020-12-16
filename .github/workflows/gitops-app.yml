@@ -7,7 +7,6 @@ on:
     paths:
       - '4-gitops/app/**'
       - '4-gitops/vanilla-manifests/**'
-      - '4-gitops/app/dwk-front/**'
       - '.github/workflows/gitops-app.yml'
 
 jobs:
